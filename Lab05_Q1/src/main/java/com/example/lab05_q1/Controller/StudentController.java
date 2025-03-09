@@ -52,8 +52,6 @@ public class StudentController {
     @GetMapping("/honors")
     public ArrayList<Student> honors() {
         Student max = students.get(0);
-        Student min = students.get(0);
-        Student temp;
         ArrayList<Student> honors = new ArrayList<>();
         for (Student s : students) {
             if (s.getGpa() >= max.getGpa()) {
